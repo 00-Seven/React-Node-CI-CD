@@ -24,7 +24,7 @@ jobs:
           cd ..
           pm2 stop 0
           pm2 start 0
-          pm2 save
+          pm2 save --force
           sudo service nginx restart
           
   
