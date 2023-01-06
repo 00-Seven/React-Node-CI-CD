@@ -5,7 +5,7 @@ const path = require("path")
 app.use(express.static(path.join(__dirname, '/frontend/build')))
 
 app.get("/items", (req, res) => {
-  let items =  ["Book","Pencil","Apple","Laptop"];
+  let items =  ["Book","Pencil","Apple","Laptop","Mango","Apple"];
   res.send(items);
 })
 
